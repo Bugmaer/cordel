@@ -79,6 +79,8 @@ section.imagem > p {
     padding: 5px;
     background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px black;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 section#img01 {
