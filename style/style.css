@@ -4,69 +4,67 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-  :root {
+:root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2:'Passion One', cursive;
+    --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
-  }
+}
 
 * {
     margin: 0px;
     padding: 0px;
     font-size: 1em;
-    
 }
-body {
+
+html, body {
     min-height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color: darkgray;
     font-family: var(--fonte1);
 }
 
 header {
-    text-align: center;
     background-color: black;
     color: white;
- 
+    text-align: center;
 }
 
-header h1 {
-    font-family: var(--fonte2);
-    font-variant: small-caps;
-    font-size: 10vw;
+header > h1 {
     padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
-header p {
+header > p {
     padding-bottom: 50px;
 }
 
 header a, footer a {
-    
-    font-size: 16px;
-    font-weight: bolder;
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
+
 header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
 section {
-    padding: 10vh 0vh 10vh 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     line-height: 2em;
+    padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 3.5vw;
 }
 
-section p {
-    text-align: left;
+section > p {
     padding-bottom: 2em;
 }
 
 section.normal {
     background-color: white;
     color: black;
-
 }
 
 section.imagem {
@@ -85,20 +83,19 @@ section.imagem > p {
 }
 
 section#img01 {
-    background-image: url(../imagens/background001.jpg);
+    background-image: url('../imagens/background001.jpg');
     background-position: right center;
-    background-size: cover;
+    
 }
 
 section#img02 {
     background-image: url('../imagens/background002.jpg');
-    background-size: cover;
+    
 }
 
 footer {
+    background-color: black;
+    color: white;
     text-align: center;
     padding: 10px;
-    font-size: 16px;
-    color: white;
-    background-color: black;
 }
